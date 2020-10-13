@@ -1,4 +1,4 @@
-#A fork of nonsense esolang by DogeDogeD
+#A python fork of nonsense esolang originally created in C++ by DogeDogeD
 #Work in progress!!!
 from collections import deque
 import time
