@@ -1,2 +1,4 @@
-# NonsensePythonFork
-The files of my python fork of the nonsense interpreter by DogeDogeD
+# What is this?
+This is a fork of nonsense interpreter by DogeDogeD!
+# Why python?
+Because i like python.
