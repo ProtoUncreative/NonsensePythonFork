@@ -1,4 +1,4 @@
 # What is this?
-This is a python fork of nonsense interpreter originally made by DogeDogeD!
+This is my python fork of nonsense interpreter which was originally made by DogeDogeD in C++!
 # Why python?
 Because i like python.
