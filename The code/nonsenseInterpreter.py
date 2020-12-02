@@ -3,46 +3,50 @@
 from collections import deque
 import time
 
-ACC = 0
+print("Do Ctrl+C to stop the program.")
 
-UI = input("Commands: ")
-print("Processing..")
+while True:
 
-DUI = deque(UI)
+    ACC = 0
 
-IP = 0
+    UI = input("Commands: ")
+    print("Processing..")
 
-fin = str()
+    DUI = deque(UI)
 
-while IP!=len(DUI):
-    x=DUI[IP]
-    if x=="+":
-        ACC+=1
-    elif x=="-":
-        ACC-=1
-    elif x==".":
-        ACC=ACC
-    elif x=="#":
-        fin+=str(ACC)
-    elif x=="*":
-        ACC=ACC**2
-    elif x=="$":
-        fin+=chr(ACC)
-    elif x=="!":
-        ACC=0
-    elif x=="^":
-        ACC+=10
-    elif x=="&":
-        ACC-=10
-    elif x==",":
-        temp1 = str()
-        while len(temp1)!=1:
-            temp1=input("Please enter input (1 character long): ")
-        ACC=ord(temp1)
-    elif x=="}":
-        time.sleep(1)
-    elif x=="%":
-        IP=0
-    IP+=1
+    IP = 0
 
-print(f"Output: {fin}")
+    fin = str()
+
+    while IP!=len(DUI):
+        x=DUI[IP]
+        if x=="+":
+            ACC+=1
+        elif x=="-":
+            ACC-=1
+        elif x==".":
+            ACC=ACC
+        elif x=="#":
+            fin+=str(ACC)
+        elif x=="*":
+            ACC=ACC**2
+        elif x=="$":
+            fin+=chr(ACC)
+        elif x=="!":
+            ACC=0
+        elif x=="^":
+            ACC+=10
+        elif x=="&":
+            ACC-=10
+        elif x==",":
+            temp1 = str()
+            while len(temp1)!=1:
+                temp1=input("Please enter input (1 character long): ")
+            ACC=ord(temp1)
+        elif x=="}":
+            time.sleep(1)
+        elif x=="%":
+            IP=0
+        IP+=1
+
+    print(f"Output: {fin}")
